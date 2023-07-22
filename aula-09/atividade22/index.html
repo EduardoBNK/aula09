@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnClick">Digite o numero!</button>
+    <script>
+   const buttonElement = document.getElementById('btnClick');
+console.log(buttonElement.getAttribute('id'));// Saida: "btnClick"
+buttonElement.setAttribute('disable', true);// Desabilita o botão
+
+const pageTitleElement = document.getElementById('pageTitle')
+console.log(pageTitleElement.textContent)
+
+pageTitleElement.classList.add('red')
+//Adiciona a class 'Red'
+
+pageTitleElement.classList.remove('red')
+//Remove a class 'Red'
+
+pageTitleElement.classList.add('green')
+//Adiciona a class 'Green'
+    </script>
+</body>
+</html>
