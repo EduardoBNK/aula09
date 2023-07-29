@@ -1,23 +1,27 @@
 const buttonElement = document.getElementById('checkButton');
+
 buttonElement.addEventListener('click', function(){
     alert('Você clicou no botão!');
 
-
     const numeroInputElement = document.getElementById('numeroInput').value;
+    const resultadoMensagemElement = document.getElementById('resultadoMensagem');
+    resultadoMensagemElement.innerHTML = 'A cor é vermelha';
+  
 
-    if( numeroInputElement <10){
+    if( numeroInputElement<100){
         
-        buttonElement.classList.remove('button-green')
-        buttonElement.classList.add('button-red')
-        alert('Cor vermelho')
+    
+        buttonElement.classList.result-success('button-red')
+        resultadoMensagemElement.innerHTML = 'A cor é vermelha';
+        
     }
     else {
         buttonElement.classList.remove('button-red')
         buttonElement.classList.add('button-green')
-        alert('Cor verde')
+        resultadoMensagemElement.innerHTML = 'A cor é verde';
         
     }
 
- 
+
 
 });
